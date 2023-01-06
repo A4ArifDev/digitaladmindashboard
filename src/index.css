@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.nav-links{
+    @apply flex space-x-3 items-center py-[15px] px-[20px] sm:px-[25px] md:px-[30px] dark:bg-[sideBarDark] hover:bg-[#F5F9FC] dark:hover:bg-[#182133] hover:border-l-4 border-[#698EFF] transition-all dark:text-white my-2
+}
+.active-nav-links{
+    @apply flex space-x-3 items-center py-[15px] px-[20px] sm:px-[25px] md:px-[30px] bg-[#F5F9FC] dark:bg-[#182133] dark:hover:bg-[#182133]  border-l-4 border-[#698EFF] transition-all dark:text-white my-2
+}
+
+.nav-links-bottom{
+    @apply flex space-x-3 items-center py-[15px] px-[10px] sm:px-[15px] md:px-[30px] dark:bg-[sideBarDark] bg-[#F5F9FC] dark:bg-[#182133] transition-all dark:text-white mt-2 rounded-md shadow-md
+}
+.paginate-container{
+    @apply flex items-center justify-between
+}
+.paginate-link{
+    @apply px-5 py-3 bg-transparent mx-2 shadow-md rounded-md font-bold dark:bg-[#0B1120] dark:text-gray-200
+}
+
+.paginate-active{
+    @apply text-purple-500 dark:text-purple-600
+}
